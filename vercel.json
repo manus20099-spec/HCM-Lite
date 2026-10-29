@@ -1,6 +1,6 @@
 {
-  "$schema": "https://vercel.com/schema/v3.json",
-  "version": 3,
+  "$schema": "https://vercel.com/schema/v2.json",
+  "version": 2,
   "builds": [
     {
       "src": "next.config.ts",

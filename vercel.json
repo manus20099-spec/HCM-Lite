@@ -1,0 +1,21 @@
+{
+  "$schema": "https://vercel.com/schema/v3.json",
+  "version": 3,
+  "builds": [
+    {
+      "src": "next.config.ts",
+      "use": "@vercel/next"
+    }
+  ],
+  "env": {
+    "MONGODB_URI": "@mongodb_uri",
+    "MONGODB_DB": "hcm_lite",
+    "SESSION_SECRET": "@session_secret",
+    "APP_BASE_URL": "https://<YOUR-PROJECT>.vercel.app",
+    "GEMINI_API_KEY": "@gemini_api_key",
+    "AI_API_KEY": "@ai_api_key",
+    "RESEND_API_KEY": "@resend_api_key",
+    "EMAIL_FROM": "you@example.com"
+  },
+  "rewrites": [{ "source": "/(.*)", "destination": "/$1" }]
+}
